@@ -14,6 +14,7 @@ Gem::Specification.new do |spec|
   spec.require_paths = ["lib"]
 
   spec.add_dependency "bootsy"
+  spec.add_dependency "carrierwave-mongoid"
   spec.add_dependency "mongoid", ">= 4.0"
 end
 
