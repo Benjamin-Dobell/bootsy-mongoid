@@ -12,7 +12,7 @@ module Bootsy
   class ImageGallery
     include Mongoid::Document
 
-    belongs_to :bootsy_resource, polymorphic: true, autosave: false
+    belongs_to :bootsy_resource, polymorphic: true, autosave: false, optional: true
     has_many :images, dependent: :destroy
 
     scope :destroy_orphans, lambda { |time_limit|

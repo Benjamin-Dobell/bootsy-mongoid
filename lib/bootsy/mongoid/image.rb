@@ -5,7 +5,7 @@ module Bootsy
   class Image
     include Mongoid::Document
     
-    belongs_to :image_gallery, touch: true
+    belongs_to :image_gallery, touch: true, optional: true
 
     mount_uploader :image_file, ImageUploader
 
